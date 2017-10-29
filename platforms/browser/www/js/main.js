@@ -12,7 +12,8 @@ window.onload = function(){ //početak rada programa
     },false);
 
     function gameStartSetter(){
-        var elementi = document.getElementById("game-container");
-        elementi.style.display="none";
+        document.getElementById("game-container").style.display = "none";
+        document.getElementById("end-container").style.display = "none";
+         
     }
 }
