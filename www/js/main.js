@@ -7,6 +7,10 @@ window.onload = function(){ //početak rada programa
 
         document.getElementById("btnStartGame").addEventListener("click", startGameClicked);
 
+        document.getElementById("btn1Player").addEventListener("click", onePlayerClicked);
+
+        document.getElementById("btn2Players").addEventListener("click", twoPlayersClicked);
+
 
 
     },false);
@@ -14,6 +18,8 @@ window.onload = function(){ //početak rada programa
     //function for hiding all of the unneaded components before game started
     function gameStartSetter(){
         document.getElementById("game-container").style.display = "none";
+        document.getElementById("container_1player").style.display = "none";
+        document.getElementById("container_2players").style.display = "none";
         document.getElementById("end-container").style.display = "none";
         document.getElementById("players_select-container").style.display = "none"; 
     }
@@ -23,5 +29,15 @@ window.onload = function(){ //početak rada programa
     function startGameClicked(){
         document.getElementById("btnStartGame").style.display= "none";
         document.getElementById("players_select-container").style.display = "block";
+    }
+    function onePlayerClicked(){
+        document.getElementById("players_select-container").style.display = "none";
+        document.getElementById("game-container").style.display = "block";
+        document.getElementById("container_1player").style.display = "block";
+    }
+    function twoPlayersClicked(){
+        document.getElementById("players_select-container").style.display = "none";
+        document.getElementById("game-container").style.display = "block";
+        document.getElementById("container_2players").style.display = "block";
     }
 }
