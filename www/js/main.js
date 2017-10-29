@@ -11,9 +11,10 @@ window.onload = function(){ //početak rada programa
 
     },false);
 
+    //function for hiding all of the unneaded components before game started
     function gameStartSetter(){
         document.getElementById("game-container").style.display = "none";
         document.getElementById("end-container").style.display = "none";
-         
+        document.getElementById("players_select-container").style.display = "none"; 
     }
 }
